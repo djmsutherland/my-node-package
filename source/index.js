@@ -1,1 +1,1 @@
-export default () => "ship it"
+export default () => "ship it!"

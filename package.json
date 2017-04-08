@@ -6,7 +6,9 @@
   "scripts": {
     "build": "babel source -d build",
     "start": "watch 'npm run build' source",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:coverage": "npm test -- --coverage",
+    "test:watch": "npm test -- --watch"
   },
   "babel": {
     "presets": [
@@ -27,6 +29,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-latest": "^6.24.1",
+    "jest": "^19.0.2",
     "watch": "^1.0.2"
   }
 }
