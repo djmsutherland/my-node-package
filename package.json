@@ -1,0 +1,32 @@
+{
+  "name": "my-node-package",
+  "version": "1.0.0",
+  "description": "My go to repository for creating new open source javascript libraries.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel source -d build",
+    "start": "watch 'npm run build' source",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djmsutherland/my-node-package.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djmsutherland/my-node-package/issues"
+  },
+  "homepage": "https://github.com/djmsutherland/my-node-package#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "watch": "^1.0.2"
+  }
+}
